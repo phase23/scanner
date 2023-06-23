@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <com.axcess.axcessaiqrscanner.camera.CameraSourcePreview
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.axcess.axcessaiqrscanner.camera.GraphicOverlay
+            android:id="@+id/graphicOverlay"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </com.axcess.axcessaiqrscanner.camera.CameraSourcePreview>
+    <RelativeLayout
+        android:id="@+id/rootview"
+        android:background="@drawable/as"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/ll_capture"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/camera_capture"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+
+            <!--<ImageView
+                android:id="@+id/cclick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />-->
+            <TextView
+                android:textColor="#353535"
+                android:text="Capture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

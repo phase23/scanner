@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/deck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="deck"
+        android:textColor="#9b9b9b"
+        android:textSize="22dp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_mscannig"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+
+
+        <ImageView
+            android:src="@drawable/ic_manphonepng"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:textColor="#9b9b9b"
+            android:layout_marginTop="10dp"
+            android:text="Manual Confirmation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="OR"
+        android:textColor="#565353" />
+
+    <LinearLayout
+        android:id="@+id/ll_qrscannig"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/ic_qrsvg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Scan QR"
+            android:textColor="#9b9b9b" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_smsscannig"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/llog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="Logout " />
+
+
+</LinearLayout>
